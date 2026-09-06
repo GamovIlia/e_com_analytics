@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="GA4 and GTM practice website">
+  <title>Catalog | Metric Market</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page-type="catalog">
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Metric Market</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="catalog.html">Catalog</a>
+      <a href="search.html">Search</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart <span class="cart-badge" data-cart-count>0</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Catalog</div><h1 style="font-size:56px">All products</h1></div>
+      <form action="search.html" method="get" class="search-box">
+        <input name="q" aria-label="Search products" placeholder="Search products">
+        <button class="btn btn-primary">Search</button>
+      </form>
+    </div>
+    <div class="grid" data-product-grid></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><strong>Metric Market</strong><br><span>Static analytics practice site.</span></div>
+    <div><a data-outbound href="https://github.com/" target="_blank" rel="noopener">External link for outbound tracking</a></div>
+  </div>
+</footer>
+<div class="cookie" data-cookie-banner hidden>
+  <strong>Analytics cookies</strong>
+  <div style="margin-top:6px;color:#c9ced6">This training banner stores only your demo consent choice in localStorage.</div>
+  <div class="actions">
+    <button class="btn btn-primary" data-consent="accepted">Accept analytics</button>
+    <button class="btn btn-secondary" data-consent="rejected">Reject</button>
+  </div>
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>

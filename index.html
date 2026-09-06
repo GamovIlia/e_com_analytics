@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="GA4 and GTM practice website">
+  <title>Metric Market | GA4 Practice Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page-type="home">
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Metric Market</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="catalog.html">Catalog</a>
+      <a href="search.html">Search</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart <span class="cart-badge" data-cart-count>0</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Analytics practice store</div>
+      <h1>A real funnel for your GA4 sandbox.</h1>
+      <p class="lead">A static demo shop designed to practice Google Analytics 4, Google Tag Manager, ecommerce events, forms, search, consent and reporting.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="catalog.html" id="hero-catalog">Browse catalog</a>
+        <a class="btn btn-secondary" href="contact.html" id="hero-contact">Send a lead</a>
+      </div>
+    </div>
+    <aside class="panel">
+      <div class="eyebrow">Practice surface</div>
+      <div class="kpi-grid" style="margin-top:16px">
+        <div class="kpi"><strong>8+</strong><span class="muted">business events</span></div>
+        <div class="kpi"><strong>6</strong><span class="muted">demo products</span></div>
+        <div class="kpi"><strong>1</strong><span class="muted">checkout funnel</span></div>
+        <div class="kpi"><strong>0</strong><span class="muted">backend needed</span></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Products</div><h2>Featured items</h2></div>
+      <a href="catalog.html">View all →</a>
+    </div>
+    <div class="grid" data-featured-grid></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="feature-grid">
+      <div class="panel feature"><h3>Search</h3><p class="muted">Practice site search tracking and search terms.</p></div>
+      <div class="panel feature"><h3>Lead form</h3><p class="muted">Practice form starts, submissions and lead conversions.</p></div>
+      <div class="panel feature"><h3>Checkout</h3><p class="muted">Practice GA4 recommended ecommerce events end to end.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container panel">
+    <div class="layout-2">
+      <div>
+        <div class="eyebrow">Newsletter</div>
+        <h2>Practice another conversion.</h2>
+        <p class="muted">Submitting this form pushes a <code>sign_up</code> event to the dataLayer.</p>
+      </div>
+      <form class="form" data-newsletter>
+        <div class="field"><label for="email-home">Email</label><input id="email-home" type="email" required placeholder="you@example.com"></div>
+        <button class="btn btn-primary">Subscribe</button>
+        <span class="success" data-newsletter-status></span>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><strong>Metric Market</strong><br><span>Static analytics practice site.</span></div>
+    <div><a data-outbound href="https://github.com/" target="_blank" rel="noopener">External link for outbound tracking</a></div>
+  </div>
+</footer>
+<div class="cookie" data-cookie-banner hidden>
+  <strong>Analytics cookies</strong>
+  <div style="margin-top:6px;color:#c9ced6">This training banner stores only your demo consent choice in localStorage.</div>
+  <div class="actions">
+    <button class="btn btn-primary" data-consent="accepted">Accept analytics</button>
+    <button class="btn btn-secondary" data-consent="rejected">Reject</button>
+  </div>
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>
