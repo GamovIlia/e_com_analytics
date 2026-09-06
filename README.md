@@ -26,7 +26,7 @@ Then open `http://localhost:8000`.
 
 For a project repository, the URL is typically:
 
-`https://YOUR-USERNAME.github.io/ga4-practice-site/`
+`https://gamovilia.github.io/e_com_analytics/index.html`
 
 The site uses only relative links, so it works under a project subpath.
 
