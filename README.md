@@ -1,2 +1,2 @@
-# e_com_analytics
+# E-com analytics
 This repo contains test version of the e-com website. Main purpose of this web example is to setup a gtm containers and tags
